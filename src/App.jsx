@@ -35,7 +35,7 @@ const App = () => {
       for ( const place of places ) {
 
         const { latitude, longitude } = place;
-        const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${ latitude }&lon=${ longitude }&appid=b34ee8567b92a6a9f3d66b60ddd8d276;&units=metric`);
+        const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${ latitude }&lon=${ longitude }&appid=b34ee8567b92a6a9f3d66b60ddd8d276&units=metric`);
         const weatherJson = await weatherResponse.json();
         const { icon, description } = weatherJson.weather[ 0 ];
         const { temp } = weatherJson.main;
