@@ -1,0 +1,54 @@
+@import "../App";
+
+.api-error {
+  @include flex-column;
+  width: 500px;
+  height: 200px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgba(205, 92, 92, 0.5); /* Rosso trasparente */
+  border-radius: 12px;
+  padding: 10px;
+
+  &__title {
+    color: indianred;
+    font-size: 18px;
+  }
+  &__p {
+    color: indianred;
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .api-error {
+    width: 300px;
+
+    &__title {
+      color: indianred;
+      font-size: 15px;
+    }
+    &__p {
+      color: indianred;
+      font-size: 12px;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+  .api-error {
+    width: 150px;
+    height: 100px;
+
+    &__title {
+      font-size: 12px;
+    }
+    &__p {
+      font-size: 10px;
+    }
+  }
+
+}

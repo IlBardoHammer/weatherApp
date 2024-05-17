@@ -1,0 +1,11 @@
+export { default as sunny } from "./sunny.png";
+export { default as fewClouds } from "./fewClouds.png";
+export { default as scatteredClouds } from "./scatteredClouds.png";
+export { default as brokenClouds } from "./brokenClouds.png";
+export { default as sunnyMoon } from "./sunnyMoon.png";
+export { default as fewCloudsMoon } from "./fewCloudsMoon.png";
+export { default as mist } from "./mist.png";
+export { default as rain } from "./rain.png";
+export { default as showerRain } from "./showerRain.png";
+export { default as thunderstorm } from "./thunderstorm.png";
+export { default as snow } from "./snow.png";

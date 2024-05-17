@@ -1,0 +1,10 @@
+@import "../App";
+
+.input-error {
+  color: red;
+  font-size: 12px;
+  &__icon {
+    margin-right: 3px;
+  }
+}
+

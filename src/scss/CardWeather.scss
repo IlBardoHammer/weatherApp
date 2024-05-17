@@ -1,0 +1,63 @@
+@import "../App";
+
+.weather-card {
+  @include flex-column;
+  //max-width: calc(33.33% - 33.67px);
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  border: $lilla solid 2px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 230px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 20px;
+
+
+  &__title {
+    color: darkgrey;
+    font-weight: normal;
+    font-size: 15px;
+  }
+
+  &__temp {
+    font-size: 68px;
+    font-weight: bold;
+    color: #6247aa;
+  }
+
+  &__celsius {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    left: 1px;
+    bottom: 35px;
+    color: #6247aa;
+
+  }
+
+  &__img {
+    width: 50%;
+    position: relative;
+    right: 5px;
+    bottom: 10px;
+
+  }
+
+  &__descr {
+    color: darkgrey;
+    font-weight: normal;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .weather-card {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .weather-card {
+    width: 200px;
+    height: 270px;
+  }
+}
