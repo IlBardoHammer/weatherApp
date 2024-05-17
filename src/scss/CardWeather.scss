@@ -22,7 +22,7 @@
   &__temp {
     font-size: 68px;
     font-weight: bold;
-    color: #6247aa;
+    color: $viola;
   }
 
   &__celsius {
@@ -31,7 +31,7 @@
     position: relative;
     left: 1px;
     bottom: 35px;
-    color: #6247aa;
+    color: $viola;
 
   }
 
@@ -57,7 +57,42 @@
 
 @media only screen and (max-width: 480px) {
   .weather-card {
-    width: 200px;
-    height: 270px;
+    width: 155px;
+    height: 210px;
+
+    &__title {
+      color: darkgrey;
+      font-weight: normal;
+      font-size: 12px;
+    }
+
+    &__temp {
+      font-size: 50px;
+      font-weight: bold;
+      color: #6247aa;
+    }
+
+    &__celsius {
+      font-size: 18px;
+      font-weight: bold;
+      position: relative;
+      left: 1px;
+      bottom: 25px;
+      color: #6247aa;
+
+    }
+
+    &__img {
+      width: 50%;
+      position: relative;
+      right: 5px;
+      bottom: 10px;
+
+    }
+
+    &__descr {
+      color: darkgrey;
+      font-weight: normal;
+    }
   }
 }

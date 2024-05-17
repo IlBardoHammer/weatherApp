@@ -1,5 +1,6 @@
 $water: #69d1c5;
 $lilla: #bbadff;
+$viola: #6247aa;
 $backgroundColor: #d0e9f0;
 
 
@@ -33,7 +34,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100vh;
   justify-content: flex-start;
-  background-color: #d0e9f0;
+  background-color: $backgroundColor;
 }
 
 .weather-app {
@@ -42,10 +43,10 @@ body::-webkit-scrollbar {
   justify-content: flex-start;
   width: 100%;
   gap: 40px;
-  background-color: #d0e9f0;
+  background-color: $backgroundColor;
 
   &__title {
-    color: #bbadff;
+    color: $viola;
     font-size: 50px;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
@@ -74,10 +75,9 @@ body::-webkit-scrollbar {
     border: none;
     color: white;
     transition: background-color 0.3s ease;
-    background-color: #bbadff;
+    background-color: $lilla;
   }
 
-  &__zip--button:active,
   &__zip--button:hover {
     cursor: pointer;
     background-color: $water;
@@ -98,7 +98,6 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 768px) {
   .weather-app__cards {
     width: 600px;
-    padding: 0 20px;
   }
 }
 
@@ -107,19 +106,19 @@ body::-webkit-scrollbar {
   .weather-app {
 
     &__title {
-      font-size: 32px;
+      font-size: 40px;
     }
 
     &__zip {
-      width: 150px;
+      width: 170px;
     }
 
     &__zip--input {
-      padding: 10px 6px;
+      padding: 16px;
     }
 
     &__zip--button {
-      padding: 10px 14px;
+      padding: 14px 16px;
     }
 
     &__cards {
