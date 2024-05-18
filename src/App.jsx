@@ -87,7 +87,7 @@ const App = () => {
                  onClick={ handleClear } onChange={ handleInput } maxLength={ 5 }/>
           <button className="weather-app__zip--button" onClick={ handleClick }>Enter</button>
         </div>
-        <h4 className="weather-app__results">Previsioni per lo zip: { zip }</h4>
+        { zip && <h4 className="weather-app__results">Previsioni per lo zip: { zip }</h4> }
 
         { networkError && <NetworkError message={ networkError }/> }
         {
