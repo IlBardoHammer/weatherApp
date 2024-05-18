@@ -23,6 +23,9 @@ const App = () => {
   }, [ zip ]);
 
 
+  const API_ID = "b34ee8567b92a6a9f3d66b60ddd8d276";
+
+
   const fetchData = async () => {
     setLoading(true);
     try {
@@ -35,7 +38,7 @@ const App = () => {
       for ( const place of places ) {
 
         const { latitude, longitude } = place;
-        const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${ latitude }&lon=${ longitude }&appid=b34ee8567b92a6a9f3d66b60ddd8d276&units=metric`);
+        const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${ latitude }&lon=${ longitude }&appid=${API_ID}&units=metric`);
         const weatherJson = await weatherResponse.json();
         const { icon, description } = weatherJson.weather[ 0 ];
         const { temp } = weatherJson.main;
@@ -84,6 +87,8 @@ const App = () => {
                  onClick={ handleClear } onChange={ handleInput } maxLength={ 5 }/>
           <button className="weather-app__zip--button" onClick={ handleClick }>Enter</button>
         </div>
+        <h4 className="weather-app__results">Previsioni per lo zip: { zip }</h4>
+
         { networkError && <NetworkError message={ networkError }/> }
         {
           loading ? <Loader loading={ loading }/> :

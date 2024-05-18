@@ -83,6 +83,12 @@ body::-webkit-scrollbar {
     background-color: $water;
   }
 
+  &__results {
+    color: $lilla;
+    font-weight: normal;
+    border-bottom: solid $lilla 2px;
+  }
+
   &__cards {
     @include flex-row;
     flex-wrap: wrap;
