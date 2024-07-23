@@ -1,20 +1,20 @@
 # Weather Zip App
 
-## Descrizione
+## Description
 
-Questo è un'applicazione web che fornisce informazioni meteorologiche in base al codice postale inserito dall'utente. L'app utilizza le API di Zippopotam per ottenere le coordinate geografiche dai codici postali e le API di OpenWeatherMap per ottenere i dati meteorologici corrispondenti.
+This is a web application that provides weather information based on the zip code entered by the user. The app uses the Zippopotam API to obtain geographic coordinates from zip codes and the OpenWeatherMap API to obtain corresponding weather data.
 
-## URL dell'applicazione
+## URL of the application
 
 Puoi provare l'applicazione navigando su [https://weather-zip-app.vercel.app/](https://weather-zip-app.vercel.app/).
 
-## Come utilizzare l'app
+## How to use the app
 
-1. Inserisci un codice postale nell'apposito campo di input.
-2. Premi il pulsante "Cerca" o premi il tasto "Invio" per ottenere le informazioni meteorologiche corrispondenti al codice postale inserito.
-3. Visualizza le informazioni meteorologiche relative al luogo corrispondente al codice postale.
+1. Enter a zip code in the input field provided.
+2. Press the "Search" button or press the "Enter" button to get the weather information corresponding to the entered zip code.
+3. View the weather information for the place corresponding to the zip code.
 
-## Tecnologie utilizzate
+## Technologies used
 
 - React
 - Vite
@@ -22,9 +22,9 @@ Puoi provare l'applicazione navigando su [https://weather-zip-app.vercel.app/](h
 - API di Zippopotam
 - API di OpenWeatherMap
 
-## Installazione e Avvio in Locale
+## Local Installation and Startup
 
-1. Clona il repository sul tuo computer.
-2. Assicurati di avere Node.js e npm installati sul tuo computer.
-3. Esegui `npm install` per installare le dipendenze.
-4. Esegui `npm run dev` per avviare l'applicazione in locale.
+1. Clone the repository on your computer.
+2. Make sure you have Node.js and npm installed on your computer.
+3. Run `npm install` to install the dependencies.
+4. Run `npm run dev` to start the application locally.
